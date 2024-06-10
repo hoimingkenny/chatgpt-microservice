@@ -1,25 +1,24 @@
 package com.openai.chatgpt;
 
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-import org.apache.coyote.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.openai.chatgpt.domain.telegram.TestBot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
 
-import java.time.LocalDateTime;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@RestController
 public class ChatgptApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(ChatgptApplication.class, args);
-	}
 
+//		String botToken = "7024395537:AAHdQVuCxZicHH7ADuE2irYn9H_iMYb6dTo";
+//		try (TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication()) {
+//			botsApplication.registerBot(botToken, new TestBot(botToken));
+//			System.out.println("MyAmazingBot successfully started!");
+//			Thread.currentThread().join();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+	}
 }
