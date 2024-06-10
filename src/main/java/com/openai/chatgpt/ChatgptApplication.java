@@ -11,14 +11,5 @@ import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
 public class ChatgptApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ChatgptApplication.class, args);
-
-//		String botToken = "7024395537:AAHdQVuCxZicHH7ADuE2irYn9H_iMYb6dTo";
-//		try (TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication()) {
-//			botsApplication.registerBot(botToken, new TestBot(botToken));
-//			System.out.println("MyAmazingBot successfully started!");
-//			Thread.currentThread().join();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
 	}
 }

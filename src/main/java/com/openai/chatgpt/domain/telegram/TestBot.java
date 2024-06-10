@@ -42,8 +42,7 @@ public class TestBot implements SpringLongPollingBot, LongPollingSingleThreadUpd
             // Set variables
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
-            log.info("Message Text: {}", message_text);
-
+            log.info("Message Text: {}, Chat ID: {}", message_text, chat_id);
             SendMessage message = SendMessage // Create a message object
                     .builder()
                     .chatId(chat_id)
